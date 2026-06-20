@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Park | Bar & Pizzeria</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Green<span>Park</span></div>
+
+        <ul id="menu">
+            <li><a href="#" data-i18n="navHome">Kryefaqja</a></li>
+            <li><a href="#about" data-i18n="navAbout">Rreth Nesh</a></li>
+            <li><a href="#MENU" data-i18n="navMenu">Menu</a></li>
+            <li><a href="#reserve" data-i18n="navReserve">Rezervo</a></li>
+        </ul>
+
+    <div class="nav-right"></div>
+        <button class="language-btn" type="button" onclick="toggleLanguage()" aria-label="Switch language">
+            <img id="languageFlag" src="https://flagcdn.com/w40/al.png" alt="Shqip">
+        </button>
+
+        <i class="fa-solid fa-bars menu-btn" onclick="toggleMenu()"></i>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1><span>Green Park</span><br><span data-i18n="heroTitle">Bar & Piceri</span></h1>
+
+        <p data-i18n="heroText">
+            Aty ku picat e shijshme me furrë druri, koktejet freskuese dhe momentet e paharrueshme bashkohen në një atmosferë moderne dhe elegante.
+        </p>
+
+        <div class="buttons">
+            <a href="#MENU" class="btn" id="viewMenuBtn" data-i18n="viewMenu">Shiko Menunë</a>
+            <a href="#reserve" class="btn outline" id="reserveBtn" data-i18n="reserveNow">Rezervo Tani</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="title">
+        <h2 id="aboutTitle"><span data-i18n="aboutWord">Rreth</span> <span data-i18n="usWord">Nesh</span></h2>
+    </div>
+
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Green Park restaurant interior">
+
+        <div class="glass">
+            <h2 data-i18n="welcomeTitle">Mirë se vini në Green Park</h2>
+            <br>
+            <p data-i18n="aboutText">
+                Green Park Bar & Piceri është një destinacion premium ku familjet dhe miqtë shijojnë pica artizanale, ushqim të shijshëm, kokteje speciale dhe një atmosferë të ngrohtë. Dizajni ynë modern dhe shërbimi i shkëlqyer krijojnë eksperienca të paharrueshme çdo ditë.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="MENU">
+    <div class="title">
+        <h2><span data-i18n="ourWord">Specialitetet</span> <span data-i18n="specialtiesWord">Tona</span></h2>
+    </div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <h3 data-i18n="pizzaTitle">Pica me Furrë Druri</h3>
+            <p data-i18n="pizzaText">Përbërës të freskët dhe shije autentike italiane.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-martini-glass"></i>
+            <h3 data-i18n="cocktailTitle">Pijet</h3>
+            <p data-i18n="cocktailText">Pije freskuese të përgatitura nga banakierë profesionistë.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-ice-cream"></i>
+            <h3 data-i18n="gardenTitle">Ëmbëlsira</h3>
+            <p data-i18n="gardenText">Ëmbëlsira të përgatitura me kujdes dhe përdorim të mirë të përbërësve.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="reserve">
+    <div class="title">
+        <h2 id="reserveTitle"><span data-i18n="reserveA">Rezervo një</span> <span data-i18n="tableWord">Tavolinë</span></h2>
+    </div>
+
+    <div class="form glass">
+        <div class="form-grid">
+            <input type="text" id="name" data-placeholder="namePlaceholder" placeholder="Emri Mbiemri">
+            <input type="tel" id="phone" data-placeholder="phonePlaceholder" placeholder="Numri i Telefonit">
+            <input type="number" id="people" data-placeholder="peoplePlaceholder" placeholder="Numri i Personave" min="1" max="50">
+            <input type="date" id="date">
+            <input type="time" id="time">
+        </div>
+
+        <button class="btn" onclick="sendWhatsApp()" data-i18n="reserveNow">Rezervo Tani</button>
+    </div>
+</section>
+
+<footer>
+    <div class="logo">Green<span>Park</span></div>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/greenpark_mamurras?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@bar.piceri.greenpark"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/pages/Bar%20Caffe%20Green%20Park/509795762831812/"><i class="fab fa-facebook"></i></a>
+
+        <div class="footer-contact">
+        <a href="tel:+355682227000">
+            <i class="fa-solid fa-phone"></i>
+            <span data-i18n="footerPhone">+355 68 222 7000</span>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Green%20Park%20Bar%20%26%20Pizzeria" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-i18n="footerLocation">Lokacioni ne Google Maps</span>
+        </a>
+    </div>
+    </div>
+
+    <p data-i18n="footerText">© 2026 Green Park Bar & Pizzeria. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
