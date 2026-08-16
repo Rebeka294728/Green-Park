@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Green Park</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="menu-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Green<span>Park</span></div>
+
+    <ul id="menu">
+        <li><a href="index.html" data-i18n="navHome">Kryefaqja</a></li>
+        <li><a href="index.html#about" data-i18n="navAbout">Rreth Nesh</a></li>
+        <li><a href="menu.html" data-i18n="navMenu">Menu</a></li>
+        <li><a href="index.html#reserve" data-i18n="navReserve">Rezervo</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <button class="language-btn" type="button" onclick="toggleLanguage()" aria-label="Switch language">
+            <img id="languageFlag" src="https://flagcdn.com/w40/al.png" alt="Shqip">
+        </button>
+
+        <i class="fa-solid fa-bars menu-btn" onclick="toggleMenu()"></i>
+    </div>
+</nav>
+
+<main class="menu-page">
+    <section class="menu-header">
+        <div class="title">
+            <h1><span data-i18n="menuTitleA">Menuja</span> <span data-i18n="menuTitleB">Green Park</span></h1>
+        </div>
+
+        <div class="category-buttons" aria-label="Kategorite e menuse">
+            <button class="category-btn active" type="button" data-category="pica" data-i18n="btnPizza">Picat</button>
+            <button class="category-btn" type="button" data-category="pije" data-i18n="btnDrinks">Pijet</button>
+            <button class="category-btn" type="button" data-category="embelsira" data-i18n="btnDesserts">Ëmbëlsira</button>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="menu-list" id="menuList"></div>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">Green<span>Park</span></div>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/greenpark_mamurras?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@bar.piceri.greenpark"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/pages/Bar%20Caffe%20Green%20Park/509795762831812/"><i class="fab fa-facebook"></i></a>
+
+        <div class="footer-contact">
+            <a href="tel:+355682227000">
+                <i class="fa-solid fa-phone"></i>
+                <span data-i18n="footerPhone">+355 68 222 7000</span>
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Green%20Park%20Bar%20%26%20Pizzeria" target="_blank" rel="noopener">
+                <i class="fa-solid fa-location-dot"></i>
+                <span data-i18n="footerLocation">Lokacioni ne Google Maps</span>
+            </a>
+        </div>
+    </div>
+
+    <p data-i18n="footerText">© 2026 Green Park Bar & Pizzeria. Te gjitha te drejtat e rezervuara.</p>
+</footer>
+
+<script src="menu-script.js"></script>
+</body>
+</html>

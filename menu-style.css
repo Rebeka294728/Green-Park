@@ -1,0 +1,376 @@
+:root{
+    --green:#16a34a;
+    --green2:#22c55e;
+    --dark-green:#0b3d20;
+    --gold:#eab308;
+    --black:#050505;
+    --card:rgba(22,163,74,0.12);
+    --gray:#d1d5db;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(11,61,32,.75);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:2rem;
+    color:var(--green2);
+    font-weight:700;
+}
+
+.logo span{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:var(--green2);
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.language-btn{
+    width:46px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;
+    background:rgba(255,255,255,.08);
+    cursor:pointer;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.language-btn:hover{
+    transform:translateY(-2px);
+    border-color:var(--gold);
+}
+
+.language-btn img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.menu-btn{
+    display:none;
+    font-size:1.8rem;
+    color:white;
+    cursor:pointer;
+}
+
+.menu-page{
+    padding-top:92px;
+}
+
+.menu-header{
+    padding:85px 8% 35px;
+    background:
+    radial-gradient(circle at top left, rgba(34,197,94,.18), transparent 34%),
+    linear-gradient(180deg, rgba(11,61,32,.38), rgba(5,5,5,0));
+}
+
+.title{
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.title h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    margin-bottom:18px;
+}
+
+.title h1 span:last-child{
+    color:var(--gold);
+    font-family:'Playfair Display',serif;
+}
+
+.title p{
+    color:#d6d6d6;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.category-buttons{
+    max-width:850px;
+    margin:36px auto 0;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:16px;
+}
+
+.category-btn{
+    min-height:54px;
+    border:none;
+    border-radius:999px;
+    background:rgba(255,255,255,.08);
+    color:white;
+    font-size:1rem;
+    font-weight:800;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,.14);
+    transition:.3s;
+}
+
+.category-btn:hover,
+.category-btn.active{
+    background:linear-gradient(45deg, var(--green), var(--green2));
+    border-color:transparent;
+    transform:translateY(-2px);
+}
+
+.menu-section{
+    padding:28px 8% 64px;
+}
+
+.menu-list{
+    max-width:1280px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    align-items:start;
+    gap:14px;
+}
+
+.menu-list.has-groups{
+    grid-template-columns:1fr;
+}
+
+.menu-group{
+    display:grid;
+    gap:12px;
+}
+
+.menu-group h3{
+    font-family:'Playfair Display',serif;
+    font-size:1.45rem;
+    color:var(--gold);
+    padding-bottom:8px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.menu-group-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+
+.menu-item{
+    display:block;
+    min-height:145px;
+    background:var(--card);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:14px;
+    transition:.4s;
+}
+
+.menu-item:hover{
+    transform:translateY(-6px);
+    border-color:rgba(234,179,8,.35);
+}
+
+.menu-category{
+    display:inline-flex;
+    width:max-content;
+    padding:4px 8px;
+    margin-bottom:8px;
+    border-radius:999px;
+    background:rgba(234,179,8,.14);
+    color:var(--gold);
+    font-size:.65rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.menu-item h2{
+    font-family:'Playfair Display',serif;
+    font-size:1.1rem;
+    line-height:1.25;
+    margin-bottom:6px;
+}
+
+.menu-item p{
+    color:#d6d6d6;
+    font-size:.82rem;
+    line-height:1.45;
+    margin-bottom:9px;
+}
+
+.menu-item strong{
+    color:var(--green2);
+    font-size:1rem;
+}
+
+.menu-item.compact{
+    padding:18px;
+}
+
+.menu-item.compact h2{
+    font-size:1.15rem;
+    font-family:'Inter',sans-serif;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.menu-item.compact strong{
+    font-size:1.05rem;
+}
+
+footer{
+    background:#030303;
+    text-align:center;
+    padding:60px 8%;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.socials{
+    margin:30px 0;
+}
+
+.socials a{
+    color:white;
+    font-size:1.4rem;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.socials a:hover{
+    color:var(--green2);
+}
+
+.footer-contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+}
+
+.footer-contact a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#d6d6d6;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.footer-contact a:hover{
+    color:var(--green2);
+}
+
+.footer-contact i{
+    color:var(--gold);
+}
+
+footer p{
+    color:#9c9c9c;
+}
+
+@media(max-width:900px){
+    nav{
+        padding:18px 6%;
+    }
+
+    .logo{
+        font-size:1.7rem;
+    }
+
+    .nav-right{
+        gap:14px;
+    }
+
+    nav ul{
+        position:absolute;
+        top:85px;
+        right:-100%;
+        width:220px;
+        background:rgba(11,61,32,.95);
+        backdrop-filter:blur(20px);
+        flex-direction:column;
+        gap:25px;
+        padding:30px;
+        border-radius:20px;
+        transition:0.4s;
+    }
+
+    nav ul.active{
+        right:20px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .title h1{
+        font-size:2.7rem;
+    }
+
+    .menu-group h3{
+        font-size:1.65rem;
+    }
+
+    .menu-group-list{
+        grid-template-columns:1fr;
+    }
+
+    .category-buttons{
+        grid-template-columns:1fr;
+    }
+
+}
