@@ -108,7 +108,7 @@ const menuData = {
             ["Fanta / Cola / Ivi", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["B52 Gri / B52 Gray", "Freskuese / Cold drinks", "200L", images.coldDrink],
             ["Redbull", "Freskuese / Cold drinks", "250L", images.coldDrink],
-            ["Golden Eagle / Energy Drink", "Freskuese / Cold drinks", "150L", images.coldDrink],
+            ["Golden Eagle / Golden Eagle", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["Lipton Ice Tea Orange / Lemon", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["Amita / Amita Fruit Juice", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["Bravo/ Bravo Fruit Juice", "Freskuese / Cold drinks", "150L", images.coldDrink],
