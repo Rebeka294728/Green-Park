@@ -106,7 +106,7 @@ const menuData = {
             ["Qumesht / Milk", "Te ngrohta / Hot drinks", "150L", images.coffee],
             ["Lemon Soda / Orange Soda", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["Fanta / Cola / Ivi", "Freskuese / Cold drinks", "150L", images.coldDrink],
-            ["B52 Gri / Energy Drink", "Freskuese / Cold drinks", "200L", images.coldDrink],
+            ["B52 Gri / B52 Gray", "Freskuese / Cold drinks", "200L", images.coldDrink],
             ["Redbull", "Freskuese / Cold drinks", "250L", images.coldDrink],
             ["Golden Eagle / Energy Drink", "Freskuese / Cold drinks", "150L", images.coldDrink],
             ["Lipton Ice Tea Orange / Lemon", "Freskuese / Cold drinks", "150L", images.coldDrink],
