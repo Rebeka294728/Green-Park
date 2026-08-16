@@ -343,37 +343,15 @@ function localizeText(text){
 
 function localizeIngredients(ingredients){
     if(currentCategory !== "pica") return localizeText(ingredients);
-    if(currentLanguage === "sq") return ingredients;
+    const parts = ingredients.split(/\s+\/\s+/);
 
-    const translations = {
-        "mocarel e fresket": "fresh mozzarella",
-        "krudo vici": "beef prosciutto",
-        "Salce": "Tomato sauce",
-        "mocarela": "mozzarella",
-        "ton": "tuna",
-        "qepe": "shallots",
-        "kerpudha": "mushrooms",
-        "speca": "peppers",
-        "ullinj": "olives",
-        "proshute": "ham",
-        "kungull": "zucchini",
-        "patellxhan": "eggplant",
-        "patate": "potatoes",
-        "veze": "egg",
-        "rukola": "arugula",
-        "pomodorini": "cherry tomatoes",
-        "pancet": "pancetta",
-        "grana": "grana cheese",
-        "pikant": "spicy sausage",
-        "sallam": "sausage",
-        "wudi": "sausage",
-        "krudo": "prosciutto"
-    };
+    // Pizza ingredients are stored as "Shqip / English".  Show only the
+    // selected half so the language switch never mixes both languages.
+    if(parts.length === 2){
+        return currentLanguage === "en" ? parts[1] : parts[0];
+    }
 
-    return Object.entries(translations).reduce(
-        (text, [albanian, english]) => text.replaceAll(albanian, english),
-        ingredients
-    );
+    return ingredients;
 }
 
 function applyLanguage(language){
