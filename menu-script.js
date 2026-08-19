@@ -48,7 +48,7 @@ const menuData = {
             ["Ton / Tuna", "Salce, mocarela, ton. / sauce, mozzarella, tuna.", "600L"],
             ["Ton-Qepe / Tuna-Shallot", "Salce, mocarela, ton, qepe. / sauce, mozzarella, tuna, shallot.", "650L"],
             ["4 Djathrat / 4 Cheeses", "Salce, mocarela, gorgonzola, grana. / sauce, mozzarella, gorgonzola, grana.", "600L"],
-            ["4 Stinet / 4 Season", "Salce, mocarela, kerpudha, speca, ullinj, proshute. / sauce, mozzarella, mushrooms, peppers, olives, ham.", "600L"],
+            ["4 Stinet / 4 Season", "Salce, mocarela, ton, kerpudha, speca, ullinj, proshute. / sauce, mozzarella, mushrooms, peppers, olives, ham.", "600L"],
             ["Vegjetariane / Vegetarian", "Salce, mocarela, speca, kungull, ullinj, patellxhan, kerpudha. / sauce, mozzarella, pumpkin, olives, eggplant, mushrooms.", "600L"],
             ["Pikant / Spicy Sausage", "Salce, mocarela, pikant. / sauce, mozzarella, spicy sausage.", "600L"],
             ["Sallam Proshute / Prosciut Salami", "Salce, mocarela, proshute, sallam. / sauce, mozzarella, prosciutto, salami.", "600L"],
